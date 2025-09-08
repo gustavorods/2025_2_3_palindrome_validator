@@ -6,6 +6,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        // get the user's response
         String userText = JOptionPane.showInputDialog("Type the word");
         boolean resultado = palindrome_validator(userText);
         
