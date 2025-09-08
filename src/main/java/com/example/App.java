@@ -1,10 +1,19 @@
 package com.example;
+
+import javax.swing.JOptionPane;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        boolean resultado = palindrome_validator("A man a plan a canal Panama");
-        System.out.println(resultado);
+        String userText = JOptionPane.showInputDialog("Type the word");
+        boolean resultado = palindrome_validator(userText);
+        
+        if(resultado == true) {
+            JOptionPane.showMessageDialog(null, "The word is a palindrome");
+        } else {
+            JOptionPane.showMessageDialog(null, "The word isn't a palindrome");
+        }
     }
 
     public static boolean palindrome_validator(String text) {

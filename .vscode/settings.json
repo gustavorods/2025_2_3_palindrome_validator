@@ -2,9 +2,10 @@
     "java.configuration.runtimes": [
         {
             "name": "JavaSE-21",
-            "path": "/home/gustavorodrigues/.sdkman/candidates/java/21.0.7-oracle"
+            "path": "/usr/lib/jvm/java-21-openjdk-amd64"
         }
     ],
     "java.configuration.defaultRuntime": "JavaSE-21",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk-amd64"
 }
